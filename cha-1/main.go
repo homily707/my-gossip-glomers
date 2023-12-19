@@ -15,7 +15,6 @@ func main() {
 			return err
 		}
 		body["type"] = "echo_ok"
-		msg.Src, msg.Dest = msg.Dest, msg.Src
 		return n.Reply(msg, body)
 	})
 
